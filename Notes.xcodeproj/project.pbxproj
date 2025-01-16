@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EC567B332D38D79E006158C8 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B322D38D79E006158C8 /* Notes.swift */; };
 		EC567B352D391531006158C8 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B342D391530006158C8 /* DetailedView.swift */; };
+		EC567B372D391F38006158C8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B362D391F38006158C8 /* CreditsView.swift */; };
+		EC567B3A2D391F5C006158C8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B392D391F5C006158C8 /* HeaderView.swift */; };
 		EC9310312D3897280083419B /* Notes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC9310302D3897280083419B /* Notes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC9310362D3897280083419B /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9310352D3897280083419B /* NotesApp.swift */; };
 		EC9310382D3897280083419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9310372D3897280083419B /* ContentView.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		EC567B322D38D79E006158C8 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		EC567B342D391530006158C8 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		EC567B362D391F38006158C8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		EC567B392D391F5C006158C8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		EC93102A2D3897280083419B /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9310302D3897280083419B /* Notes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9310352D3897280083419B /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			children = (
 				EC9310372D3897280083419B /* ContentView.swift */,
 				EC567B342D391530006158C8 /* DetailedView.swift */,
+				EC567B362D391F38006158C8 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -77,6 +82,14 @@
 				EC567B322D38D79E006158C8 /* Notes.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC567B382D391F49006158C8 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EC567B392D391F5C006158C8 /* HeaderView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		EC9310232D3897270083419B = {
@@ -99,6 +112,7 @@
 		EC9310342D3897280083419B /* Notes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				EC567B382D391F49006158C8 /* Component */,
 				EC567B312D38D782006158C8 /* Model */,
 				EC9310352D3897280083419B /* NotesApp.swift */,
 				EC567B302D38D755006158C8 /* View */,
@@ -215,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC567B352D391531006158C8 /* DetailedView.swift in Sources */,
+				EC567B3A2D391F5C006158C8 /* HeaderView.swift in Sources */,
 				EC9310382D3897280083419B /* ContentView.swift in Sources */,
 				EC9310362D3897280083419B /* NotesApp.swift in Sources */,
+				EC567B372D391F38006158C8 /* CreditsView.swift in Sources */,
 				EC567B332D38D79E006158C8 /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
