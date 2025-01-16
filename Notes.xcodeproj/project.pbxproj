@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC567B332D38D79E006158C8 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B322D38D79E006158C8 /* Notes.swift */; };
+		EC567B352D391531006158C8 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B342D391530006158C8 /* DetailedView.swift */; };
 		EC9310312D3897280083419B /* Notes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC9310302D3897280083419B /* Notes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC9310362D3897280083419B /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9310352D3897280083419B /* NotesApp.swift */; };
 		EC9310382D3897280083419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9310372D3897280083419B /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		EC567B322D38D79E006158C8 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		EC567B342D391530006158C8 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
 		EC93102A2D3897280083419B /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9310302D3897280083419B /* Notes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9310352D3897280083419B /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				EC9310372D3897280083419B /* ContentView.swift */,
+				EC567B342D391530006158C8 /* DetailedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC567B352D391531006158C8 /* DetailedView.swift in Sources */,
 				EC9310382D3897280083419B /* ContentView.swift in Sources */,
 				EC9310362D3897280083419B /* NotesApp.swift in Sources */,
 				EC567B332D38D79E006158C8 /* Notes.swift in Sources */,

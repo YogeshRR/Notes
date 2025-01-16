@@ -50,61 +50,65 @@ struct ContentView: View {
     //MARK: - BODY
     var body: some View {
         
+        NavigationView {
             VStack {
-                    HStack (alignment: .center, spacing: 6) {
-                        TextField("Add New Notes", text: $text)
-                        Button{
-                            guard text.isEmpty == false else {return}
-                            
-                            let note = Notes(id: UUID(), text: text)
-                            notes.append(note)
-                            
-                            text = ""
-                            
-                            save()
-                            
-                        } label: {
-                            Image(systemName: "plus.circle")
-                        }
-                        .fixedSize()
-                        .buttonStyle(PlainButtonStyle())
-                        .foregroundColor(.accentColor)
-                        .font(.system(size : 42, weight: .semibold))
-                        //.buttonStyle(BorderedButtonStyle(tint: .accentColor))
-                    } // :- HSTACK
-                    
-                    Spacer()
-                if notes.count >= 1 {
-                    List {
-                        
-                        ForEach(0..<notes.count, id : \.self) { i in
-                            HStack{
-                                Capsule()
-                                    .frame(width: 4)
-                                    .foregroundColor(.accentColor)
-                                Text(notes[i].text  )
-                                    .lineLimit(1)
-                                    .padding(.leading, 5)
+                        HStack (alignment: .center, spacing: 6) {
+                            TextField("Add New Notes", text: $text)
+                            Button{
+                                guard text.isEmpty == false else {return}
+                                
+                                let note = Notes(id: UUID(), text: text)
+                                notes.append(note)
+                                
+                                text = ""
+                                
+                                save()
+                                
+                            } label: {
+                                Image(systemName: "plus.circle")
                             }
+                            .fixedSize()
+                            .buttonStyle(PlainButtonStyle())
+                            .foregroundColor(.accentColor)
+                            .font(.system(size : 42, weight: .semibold))
+                            //.buttonStyle(BorderedButtonStyle(tint: .accentColor))
+                        } // :- HSTACK
+                        
+                        Spacer()
+                    if notes.count >= 1 {
+                        List {
+                            
+                            ForEach(0..<notes.count, id : \.self) { i in
+                                NavigationLink(destination: DetailedView(note: notes[i], count: notes.count, index: i)) {
+                                    HStack{
+                                        Capsule()
+                                            .frame(width: 4)
+                                            .foregroundColor(.accentColor)
+                                        Text(notes[i].text  )
+                                            .lineLimit(1)
+                                            .padding(.leading, 5)
+                                    }
+                                } // :- NAVIGATION LINK
+                            }
+                            .onDelete(perform: deleteItem(offset:))
                         }
-                        .onDelete(perform: deleteItem)
-                    }
-                } else {
-                    Spacer()
-                    Image(systemName: "note.text")
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundColor(.gray)
-                        .opacity(0.35)
-                    Spacer()
-                } // :- LOOP
-                
-            } // :- VSTACK
-            .navigationTitle("Notes")
-            .navigationBarTitleDisplayMode(.inline)
-            .onAppear(perform: {
-                load()
+                    } else {
+                        Spacer()
+                        Image(systemName: "note.text")
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.gray)
+                            .opacity(0.35)
+                        Spacer()
+                    } // :- LOOP
+                    
+                } // :- VSTACK
+                .navigationTitle("Notes")
+                .navigationBarTitleDisplayMode(.inline)
+                .onAppear(perform: {
+                    load()
             })
+        }
             
         }
 }
