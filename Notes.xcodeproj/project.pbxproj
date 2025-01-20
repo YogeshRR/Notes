@@ -11,6 +11,7 @@
 		EC567B352D391531006158C8 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B342D391530006158C8 /* DetailedView.swift */; };
 		EC567B372D391F38006158C8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B362D391F38006158C8 /* CreditsView.swift */; };
 		EC567B3A2D391F5C006158C8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B392D391F5C006158C8 /* HeaderView.swift */; };
+		EC567B3C2D3926D9006158C8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC567B3B2D3926D9006158C8 /* SettingsView.swift */; };
 		EC9310312D3897280083419B /* Notes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC9310302D3897280083419B /* Notes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC9310362D3897280083419B /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9310352D3897280083419B /* NotesApp.swift */; };
 		EC9310382D3897280083419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9310372D3897280083419B /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 		EC567B342D391530006158C8 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
 		EC567B362D391F38006158C8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		EC567B392D391F5C006158C8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EC567B3B2D3926D9006158C8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EC93102A2D3897280083419B /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9310302D3897280083419B /* Notes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9310352D3897280083419B /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				EC9310372D3897280083419B /* ContentView.swift */,
 				EC567B342D391530006158C8 /* DetailedView.swift */,
 				EC567B362D391F38006158C8 /* CreditsView.swift */,
+				EC567B3B2D3926D9006158C8 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC567B3C2D3926D9006158C8 /* SettingsView.swift in Sources */,
 				EC567B352D391531006158C8 /* DetailedView.swift in Sources */,
 				EC567B3A2D391F5C006158C8 /* HeaderView.swift in Sources */,
 				EC9310382D3897280083419B /* ContentView.swift in Sources */,

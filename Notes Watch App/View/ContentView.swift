@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //MARK: - PROPERTIES
+    @AppStorage("lineCount") var lineCount : Int = 1
     @State private var notes : [Notes] = [Notes] ()
     @State private var text : String = ""
     //MARK: - FUNCTIONS
@@ -85,7 +86,7 @@ struct ContentView: View {
                                             .frame(width: 4)
                                             .foregroundColor(.accentColor)
                                         Text(notes[i].text  )
-                                            .lineLimit(1)
+                                            .lineLimit(lineCount)
                                             .padding(.leading, 5)
                                     }
                                 } // :- NAVIGATION LINK
